@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../Css/Navbar.css';
+import Logo from '../Assets/logo.png';
 
 import { GrFacebookOption } from "react-icons/gr";
 import { GrTwitter } from "react-icons/gr";
@@ -10,8 +11,9 @@ import { GrInstagram } from "react-icons/gr";
 
 import { BiMenuAltLeft } from 'react-icons/bi';
 
+
 import { IoIosSearch } from 'react-icons/io';
-import { IoIosHeartEmpty } from 'react-icons/io';
+import { FiPhoneCall } from 'react-icons/fi';
 import { IoHeartOutline } from 'react-icons/io5';
 
 import { VscAccount } from 'react-icons/vsc';
@@ -21,7 +23,7 @@ import { CgClose } from 'react-icons/cg';
 
 import { IoHomeOutline } from 'react-icons/io5';
 
-import { IoSettingsOutline } from 'react-icons/io5';
+import { FiClock } from 'react-icons/fi';
 
 const Navbar = () => {
 
@@ -29,76 +31,75 @@ const Navbar = () => {
 
     return (
         <header>
+            <div className="topbar">
+                <div className="topbar-logo">
+                        <img src={Logo} alt="topbar-logo" />
+                </div>
+                <div className="topbar-right">
+                    <div className="call">
+                        <span className="call-icon"><FiPhoneCall/></span>
+                        <span className="number">
+                            <div className="num-line1">Call Today:</div>
+                            <div className="num-line2"><a href='tel:+918700255519'>+91 8700255519</a></div>
+                        </span>
+                    </div>
+                    <div className="open-timing">
+                        <span className="time-icon"><FiClock/></span>
+                        <span className="timing">
+                            <div className="time-line1">Opening Hours:</div>
+                            <div className="time-line2">Mon-Fri: 9am-6pm;<br/>Sat-Sun: 10am-1pm</div>
+                        </span>
+                    </div>
+                </div>
+            </div>
             <nav>
                 <div className="nav-left">
                     <div className="menu-icon" onClick={() => { setMobileMenu('mobile-menu') }}>
                         <BiMenuAltLeft />
                     </div>
                     <div className="social-icons">
-                        <span className="facebook"><GrFacebookOption /></span>
-                        <span className="twitter"><GrTwitter /></span>
-                        <span className="google"><GrGooglePlus /></span>
-                        <span className="instagram"><GrInstagram /></span>
+                        <span className="facebook social"><GrFacebookOption /></span>
+                        <span className="twitter social"><GrTwitter /></span>
+                        <span className="google social"><GrGooglePlus /></span>
+                        <span className="instagram social"><GrInstagram /></span>
                     </div>
                 </div>
                 <div className="nav-middle">
                     <div className="nav-links">
                         <ul>
                             <li><Link to='/'>Home</Link></li>
-                            <li className='shop'>
-                                <Link to='/products'>Shop</Link>
-                                <span className='shop-new'>New</span>
-                            </li>
-                            <li><Link to='/products'>Products</Link></li>
-                            <li><Link to='/about'>About Us</Link></li>
+                            <li><Link to='/about'>About</Link></li>
+                            <li><Link to='/products'>Services</Link></li>
+                            <li><Link to='/about'>Our Professionals</Link></li>
                             <li><Link to='/contact-us'>Contact Us</Link></li>
                         </ul>
                     </div>
                     <div className="nav-logo">
-                        <img src="https://claue2.arrowtheme.com/media/logo/stores/10/logo_claue_1.png" alt="nav-logo" />
+                        <img src={Logo} alt="nav-logo" />
                     </div>
                 </div>
                 <div className="nav-right">
-                    <span className="search"><Link><IoIosSearch /></Link></span>
                     <span className="account"><Link to='/login'><VscAccount /></Link></span>
-                    <span className="wishlist"><Link to='/wishlist'><IoIosHeartEmpty /></Link></span>
-                    <span className="cart">
-                        <Link to='/cart'><BsCart3 /></Link>
-                        <span className="total-item">0</span>
-                    </span>
                 </div>
             </nav >
             <div className={mobileMenu}>
                 <div className="close-icon" onClick={() => { setMobileMenu('mobile-menu-close') }}><CgClose /></div>
                 <div className="column-menu">
                     <div className="mobile-logo">
-                        <img src="https://claue2.arrowtheme.com/media/logo/stores/10/logo_claue_1.png" alt="nav-logo" />
+                        <img src={Logo} alt="nav-logo" />
                     </div>
                     <div className="mobile-menu-links">
                         <ul>
                             <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/'>Home</Link></li>
-                            <li className='shop' onClick={() => { setMobileMenu('mobile-menu-close') }}>
-                                <Link to='/products'>Shop</Link>
-                                <span className='shop-new-mobile'>New</span>
-                            </li>
-                            <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/products'>Products</Link></li>
-                            <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/about'>About Us</Link></li>
-                            <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/contact-us'>Contact Us</Link></li>
+                            <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/products'>About</Link></li>
+                            <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/products'>Services</Link></li>
+                            <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/about'>Our Professionals</Link></li>
+                            <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/contact-us'>Contact</Link></li>
                             <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/login'>Login</Link></li>
                             <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/register'>Register</Link></li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div className="bottom-bar">
-                <span className="bottom-icon account"><Link to='/login' className='bottom-bar-icon'><VscAccount /></Link></span>
-                <span className="bottom-icon wishlist"><Link to='/wishlist' className='bottom-bar-icon'><IoHeartOutline /></Link></span>
-                <span className="bottom-icon home"><Link to='/' className='bottom-bar-icon'><IoHomeOutline /></Link></span>
-                <span className="bottom-icon cart">
-                    <Link to='/cart' className='bottom-bar-icon'><BsCart3 /></Link>
-                    <span className="total-item-mobile">0</span>
-                </span>
-                <span className="bottom-icon setting" onClick={() => { setMobileMenu('mobile-menu') }}><IoSettingsOutline /></span>
             </div>
         </header >
     );

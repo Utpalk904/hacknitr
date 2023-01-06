@@ -1,13 +1,13 @@
 .home-frame {
     width: 100%;
     height: calc(100vh - 61px);
-    background: url(../Assets/Slider_1.jpg) no-repeat;
+    background: linear-gradient(to right, rgb(255,255,255,.2), rgb(255,255,255,.2)) ,url(../Assets/Slider_1.jpg) no-repeat;
     background-size: cover;
 }
 
 .home-frame-content {
     height: 100%;
-    width: 48%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,21 +16,15 @@
 
 .home-frame .line1 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     color: #222;
 }
 
 .home-frame .line2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 3.125rem;
+    font-size: 3rem;
     color: #222;
     font-weight: bold;
-}
-
-.home-frame .line3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: .875rem;
-    color: #878787;
     margin-bottom: 1rem;
 }
 
@@ -39,11 +33,13 @@
     font-size: .875rem;
     text-decoration: none;
     color: #222;
+    background-color: transparent;
     border: 2px solid #222;
-    border-radius: 20px;
-    padding: .5rem 2rem;
+    border-radius: 15px;
+    padding: .6rem 3rem;
     font-weight: 600;
     transition: all .15s;
+    font-size: 1rem;
 }
 
 .shop-now:hover {
@@ -54,9 +50,6 @@
 }
 
 @media screen and (max-width:1350px) {
-    /* .home-frame {
-        background: url(../assets/Slider_1Copy2.jpg) no-repeat;
-    } */
 
     .home-frame-content {
         padding-left: 7rem;
@@ -64,19 +57,10 @@
 }
 
 @media screen and (max-width:1250px) {
-    /* .home-frame {
-        background: url(../assets/Slider_1Copy3.jpg) no-repeat;
-    } */
 
     .home-frame-content {
         width: 55%;
     }
-}
-
-@media screen and (max-width:1175px) {
-    /* .home-frame {
-        background: url(../assets/Slider_1Copy4.jpg) no-repeat;
-    } */
 }
 
 @media screen and (max-width:1130px) {
@@ -84,9 +68,6 @@
         padding-left: 4rem;
     }
 
-    /* .home-frame {
-        background: url(../assets/Slider_1Copy5.jpg) no-repeat;
-    } */
 }
 
 @media screen and (max-width:1045px) {
@@ -95,26 +76,10 @@
         width: 60%;
     }
 
-    /* .home-frame {
-        background: url(../assets/Slider_1Copy5.jpg) no-repeat;
-    } */
 }
-
-@media screen and (max-width:990px) {
-    /* .home-frame {
-        background: url(../assets/Slider_1Copy6.jpg) no-repeat;
-    } */
-}
-
-                        /* ******************************CHANGE FROM HERE******************************** */
 
 @media screen and (max-width:910px) {
-    /* .home-frame {
-        background: url(../assets/Slider_1Copy7.jpg) no-repeat;
-        background: linear-gradient(to right, rgb(255,255,255,.2), rgb(255,255,255,.2)) ,url(../assets/img7.jpg) no-repeat;
 
-        background-size: cover;
-    } */
     .home-frame-content {
         width: 100%;
     }
@@ -128,53 +93,6 @@
     }
 }
 
-/* @media screen and (max-width:855px) {
-    .home-frame-content {
-        width: 60%;
-        margin-left: 2rem;
-    }
-
-    .home-frame {
-        background: url(../assets/Slider_1Copy8.jpg) no-repeat;
-    }
-} */
-/* 
-@media screen and (max-width:784px) {
-    .home-frame-content {
-        width: 70%;
-    }
-
-    .home-frame {
-        background: url(../assets/Slider_1Copy9.jpg) no-repeat;
-    }
-} */
-
-@media screen and (max-width:750px) {
-    /* .home-frame {
-        background: linear-gradient(to right, rgb(255,255,255,.2), rgb(255,255,255,.2)) ,url(../assets/img8.jpg) no-repeat;        background-size: cover;
-    } */
-}
-
-/* @media screen and (max-width:688px) {
-    .home-frame-content {
-        width: 75%;
-    }
-
-    .home-frame {
-        background: url(../assets/Slider_1Copy10.jpg) no-repeat;
-    }
-} */
-
-/* @media screen and (max-width:628px) {
-    .home-frame-content {
-        width: 85%;
-    }
-
-    .home-frame {
-        background: url(../assets/Slider_1Copy11.jpg) no-repeat;
-    }
-} */
-
 @media screen and (max-width:556px) {
     .home-frame .line1 {
         font-size: 1rem;
@@ -185,10 +103,6 @@
         margin-bottom: .7rem;
     }
 
-    /* .home-frame {
-        background: linear-gradient(to right, rgb(255,255,255,.2), rgb(255,255,255,.2)) ,url(../assets/img9.jpg) no-repeat;
-        background-size: cover;
-    } */
 }
 
 @media screen and (max-width:476px) {
@@ -196,10 +110,6 @@
         padding-left: 1.5rem;
     }
 
-    /* .home-frame {
-        background: url(../assets/Slider_1Copy13.jpg) no-repeat;
-        background-size: cover;
-    } */
 }
 
 @media screen and (max-width:430px) {

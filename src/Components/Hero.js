@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import styles from "./Hero.module.css"
-import {FaAngleLeft, FaAngleRight, FaCircle} from "react-icons/fa"
+import styles from "../Css/Hero.module.css";
+import {FaAngleLeft, FaAngleRight, FaCircle} from "react-icons/fa";
 
 function Hero() {
 const images = ['doctor1.jpg','doctor2.jpg','doctor3.jpg','doctor4.jpg','doctor5.jpg','doctor6.jpg']
