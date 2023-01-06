@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    gap: 60px;
+}
+
+.container div {
+    height: 160px;
+    width: auto;
+    display: flex;
+}
+
+.type {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.type h2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.type h3 {
+    font-size: 35px;
+    color: var(--blue);
+    margin: 20px 0 0;
+}
