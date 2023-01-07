@@ -12,16 +12,14 @@ import { GrInstagram } from "react-icons/gr";
 import { BiMenuAltLeft } from 'react-icons/bi';
 
 
-import { IoIosSearch } from 'react-icons/io';
+// import { IoIosSearch } from 'react-icons/io';
 import { FiPhoneCall } from 'react-icons/fi';
-import { IoHeartOutline } from 'react-icons/io5';
 
 import { VscAccount } from 'react-icons/vsc';
-import { BsCart3 } from 'react-icons/bs';
 
 import { CgClose } from 'react-icons/cg';
 
-import { IoHomeOutline } from 'react-icons/io5';
+// import { IoHomeOutline } from 'react-icons/io5';
 
 import { FiClock } from 'react-icons/fi';
 
