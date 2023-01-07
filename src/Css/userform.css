@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f3f3fe;
+    display: flex;
+    justify-content: center;
+}
+
+input,
+select,
+textarea {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+hr.solid {
+    border-top: 1.5px solid #bbb;
+    margin: 15px 0;
+}
+
+.form {
+    width: 752px;
+    background-color: #fafafa;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.form .topHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topHeader img {
+    width: 120px;
+    height: 120px;
+}
+
+.topHeader .hospital_detail {
+    display: flex;
+    font-size: 15px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.request_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.request_container h5 {
+    font-size: 15px;
+    font-weight: 500;
+    color: gray;
+    text-align: center;
+}
+
+.input_fields {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.input_fields .name,
+.input_fields .dob,
+.input_fields .phone_gen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dob .input {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.select_input {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: calc(100%/3.2);
+    gap: 5px;
+}
+
+.select_input select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.select_input h3 {
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.input_fields .phone_gen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gender,
+.phone,
+.email {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.gender .input select,
+.phone .input input {
+    width: 100%;
+}
+
+.phone .input input {
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.facility_before {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.facility_before .title,
+.department .title {
+    font-size: 1.1rem;
+}
+
+.facility_before .facility_select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.facility_before .facility_select div {
+    gap: 5px;
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.department,
+.procedure,
+.appointment,
+.past_history,
+.symptoms {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    font-size: 1.1rem;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.department .input_field input,
+.procedure .input_field select,
+.appointment .input_fields input,
+.past_history .input_fields textarea {
+    width: 50%;
+}
+
+.past_history .input_fields textarea {
+    height: 100px;
+    width: 60%;
+    resize: none;
+}
+
+@media (max-width:752px) {
+    .topHeader {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topHeader .hospital_detail {
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+    }
+
+    .form,
+    .input_fields .phone_gen {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dob .input .select_input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .input {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gender,
+    .phone,
+    .email {
+        width: 100%;
+    }
+
+    .department .input_field input,
+    .procedure .input_field select,
+    .appointment .input_fields input,
+    .past_history .input_fields textarea,
+    .symptoms .input_fields input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.inputBox {
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    margin: 1rem 0;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.inputBox h3 {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+@media (max-width:752px) {
+    .inputBox {
+        width: 100%;
+    }
+}
