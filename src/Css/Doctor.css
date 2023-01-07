@@ -1,0 +1,72 @@
+.doctor-list {
+    margin: 5rem 0;
+}
+
+.doctor-list .all-doctors {
+    display: flex;
+    width: 100%;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.doctor-list h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    color: rgb(128, 128, 128);
+    margin-bottom: 2rem;
+}
+
+
+.doctor-profile {
+    width: clamp(250px, 23vw, 600px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: all .5s;
+    padding-bottom: 1.5rem;
+    margin: 1rem;
+    font-family: 'Poppins', sans-serif;
+    height: clamp(324px,auto,auto);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 4px;
+}
+
+.doctor-profile:hover hr {
+    width: 100px;
+    transition: all .5s;
+    border: 2px solid rgb(229, 112, 112);
+}
+
+.doctor-profile hr {
+    width: 60px;
+    color: #009cf6;
+    border: 2px solid #00a2ff;
+    transition: all .5s;
+    margin: .5rem 0;
+}
+
+.doctor-pic {
+    margin-bottom: .7rem;
+}
+
+.doctor-pic img {
+    width: 100%;
+}
+
+.doctor-name {
+    font-size: 1.3rem;
+}
+
+.doctor-spec, .doctor-edu, .doctor-exp {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(109, 102, 102);
+}
+
+.doctor-email {
+    font-size: 1.1rem;
+}

@@ -93,7 +93,7 @@ const Navbar = () => {
                             <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/'>Home</Link></li>
                             <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/products'>About</Link></li>
                             <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/products'>Services</Link></li>
-                            <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/about'>Our Professionals</Link></li>
+                            <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/doctor-list'>Our Professionals</Link></li>
                             <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/contact-us'>Contact</Link></li>
                             <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/login'>Login</Link></li>
                             <li onClick={() => { setMobileMenu('mobile-menu-close') }}><Link to='/register'>Register</Link></li>
