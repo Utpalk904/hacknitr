@@ -1,0 +1,58 @@
+.container{
+    width: 100%;
+    margin:20px 0 40px 0;
+}
+.container h1{
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #444;
+}
+.doctors{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.doctor{
+    padding: 0 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.doctor img{
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.doctor div{
+    padding: 20px;
+    color: #666;
+}
+.doctor p{
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.doctor h3{
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.doctor h4{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+.doctor span{
+    color:#5bb7ed;
+}
+
+@media (max-width:800px){
+    .doctors{
+        grid-template-columns: 1fr;
+    }
+}

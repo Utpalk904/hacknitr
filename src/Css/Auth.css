@@ -2,10 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    /* background-image: url("../../public/background.webp"); */
-    /* background-image: url("../../public/medrep1.jpg"); */
+    /* background-image: url("../Assets/background.webp"); */
+    background-image: url("../Assets/medrep1.jpg");
     background-size: cover;
     background-blend-mode: hue;
 }
@@ -25,10 +25,10 @@
 
 .Auth-form {
     width: 460px;
-    /* background-color:rgba(0,50,90,0.3); */
-    background: linear-gradient(135deg, #c1eefc, #dcf4fb);
-    box-shadow: rgba(0, 150, 230, 0.8) 0 0 20px;
-    /* box-shadow: rgba(0, 55, 125, 0.9) 0 0 10px; */
+    background-color:rgba(0,50,90,0.3);
+    /* background: linear-gradient(135deg, #c1eefc, #dcf4fb); */
+    /* box-shadow: rgba(0, 150, 230, 0.8) 0 0 20px; */
+    box-shadow: rgba(0, 55, 125, 0.9) 0 0 10px;
     border-radius: 8px;
     padding-top: 30px;
     padding-bottom: 20px;

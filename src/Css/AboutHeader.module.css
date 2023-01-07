@@ -1,0 +1,41 @@
+.image {
+    width: 100%;
+    background-image: url("../Assets/aboutheader.jpg");
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexsb {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.flexsb h1 {
+    margin: 0;
+    color: #5ab7ed;
+    font-size: 36px;
+}
+
+.bookbtn {
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 12px;
+    background-color: #5ab7ed;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:700px) {
+    .flexsb{
+        display: none;
+    }
+}
