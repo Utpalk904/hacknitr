@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../Css/changePassword.css'
 
-export default function ChangePassword() {
+export default function ChangePassword(props) {
     const [user, setUser] = useState('');
     const [newPass, setNewPass] = useState('');
     const [newcnfPass, setNewCnfPass] = useState('');
@@ -14,11 +14,11 @@ export default function ChangePassword() {
             "password": newPass
         };
         console.log(change_data);
-        const otp = localStorage.getItem(otp)
-        axios.post("http://localhost:5000/user/changePassword", change_data)
+        const otp = localStorage.getItem("otp")
+        axios.post(`http://localhost:5000/${props.type}/changePassword`, change_data)
         .then(res=>{
             console.log(res.data)
-            window.location="/user/login"
+            window.location=`/${props.type}/login`
         })
         .catch(err => {
                 console.log(err)
@@ -41,7 +41,7 @@ export default function ChangePassword() {
                         }} />
                     </div>
                     <button type="submit" className='change_submit'>Submit</button>
-                    <p>Back to <Link to="/user/login">login</Link></p>
+                    <p>Back to <Link to={`/${props.type}/login`}>login</Link></p>
                 </form>
             </div>
         </div>

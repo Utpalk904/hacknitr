@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../Css/Achieved.css";
+import styles from "../Css/Achieved.module.css";
 // import styles from "../Css/Delivered.module.css";
 import {FaBriefcaseMedical, FaPills, FaHospital, FaUserNurse} from "react-icons/fa";
 

@@ -18,19 +18,22 @@ import Register from './Pages/register';
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About/>} />
         <Route path='/contact-us' element={<Home />} />
         <Route path='/appointment' element={<UserForm />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='' element={<Forgot_Pass/>}></Route>
+        <Route path='/user/login' element={<Auth type="user"/>} />
+        <Route path='/doctor/login' element={<Auth type="doctor"/>} />
+        <Route path='/register' element={<Home />} />
+        <Route path='/user/forgotPassword' element={<Forgot_Pass/>}></Route>
         <Route path='/user/verifyOtp' element={<OTP/>} ></Route>
         <Route path='/user/changePassword' element={<ChangePassword/>}></Route>
+        <Route path='/doctor/forgotPassword' element={<Forgot_Pass type="doctor"/>}></Route>
+        <Route path='/doctor/verifyOtp' element={<OTP type="doctor"/>} ></Route>
+        <Route path='/doctor/changePassword' element={<ChangePassword type="doctor"/>}></Route>
         <Route path='/dashboard' element={<DoctorDashboard />} />
-
         <Route path='*' element={<PageNotFound />} />
       </Routes>
       <Footer/>

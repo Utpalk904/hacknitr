@@ -13,6 +13,7 @@ import { SlUserFemale } from 'react-icons/sl';
 import { BsEye } from 'react-icons/bs';
 import { TbDental } from 'react-icons/tb';
 import { GiHumanEar } from 'react-icons/gi';
+import Specials from '../Components/Specials';
 // import Auth from './Auth';
 
 
@@ -31,9 +32,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            {/* <Hero/> */}
             <Achieved/>
-            {/* <Auth/> */}
             <div className="service-section">
                 <h1>Our Services</h1>
                 <div className="all-services">
@@ -45,6 +44,7 @@ const Home = () => {
                     <Service serviceIcon={<GiHumanEar/>} serviceName='Ear Treatment' serviceDesc='An ear is the organ that enables hearing and, in mammals, body balance using the vestibular system.'/>
                 </div>
             </div>
+            <Specials/>
         </div>
     );
 }

@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../Css/userform.css';
 import InputBox from '../Components/Input_box';
+import axios from 'axios';
+
 
 export default function UserForm() {
+
+      useEffect(() => {
+        const token = localStorage.getItem("token")
+        async function verifyToken() {
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            }
+            try {
+                const resp = await axios.get("http://localhost:5000/user/check_login", config)
+                if (resp.data.verified)
+                    console.log("verified")
+            } catch (error) {
+                window.location = "/user/login"
+            }
+        }
+        verifyToken()
+    }, [])
+
     return (
         <div className="form-container">
             <div className="form">
@@ -11,7 +33,6 @@ export default function UserForm() {
                     <h1>Doctor Appointment Request Form</h1>
                     <h5>Fill the form below and we will get back soon to you for more updates and plan your appointment.</h5>
                 </div>
-
                 <div className="input_fields">
                     <div className="name">
                         <div className="title">Name</div>
