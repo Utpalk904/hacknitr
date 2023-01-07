@@ -4,6 +4,8 @@ import '../App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import '../Css/Home.css';
+// import Hero from '../Components/Hero';
+import Achieved from '../Components/Achieved';
 import Service from '../Components/Service';
 import { RiLungsLine } from 'react-icons/ri';
 import { GiHeartBeats } from 'react-icons/gi';
@@ -11,6 +13,7 @@ import { SlUserFemale } from 'react-icons/sl';
 import { BsEye } from 'react-icons/bs';
 import { TbDental } from 'react-icons/tb';
 import { GiHumanEar } from 'react-icons/gi';
+import Auth from './Auth';
 
 
 const Home = () => {
@@ -28,6 +31,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            {/* <Hero/> */}
+            <Achieved/>
+            {/* <Auth/> */}
             <div className="service-section">
                 <h1>Our Services</h1>
                 <div className="all-services">

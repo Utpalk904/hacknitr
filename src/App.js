@@ -11,6 +11,7 @@ import Auth from './Pages/Auth';
 import "bootstrap/dist/css/bootstrap.min.css"
 import About from './Pages/About';
 import UserForm from './Pages/user_form';
+import DoctorDashboard from './Pages/DoctorDashboard';
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path='' element={<Forgot_Pass/>}></Route>
         <Route path='/user/verifyOtp' element={<OTP/>} ></Route>
         <Route path='/user/changePassword' element={<ChangePassword/>}></Route>
+        <Route path='/dashboard' element={<DoctorDashboard />} />
+
         <Route path='*' element={<PageNotFound />} />
       </Routes>
       <Footer/>

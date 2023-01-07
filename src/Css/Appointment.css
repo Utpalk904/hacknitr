@@ -1,0 +1,68 @@
+.appointment-card {
+    border: 1px solid #5bb7ed;
+    /* border: 1px solid rgb(144, 131, 131); */
+    font-family: 'poppins','sans-serif';
+    background-color: white;
+    padding: .8rem 1.5rem;
+    border-radius: 10px;
+    width: clamp(200px,75vw,800px);
+    margin: 2rem 0;
+}
+
+.appointment-card hr {
+    color: #5bb7ed;
+    width: 50%;
+    text-align: center;
+}
+
+.appointment-card div {
+    margin: .5rem 0;
+    /* border: 1px solid #5bb7ed; */
+}
+
+.appointment-card span {
+    color: #41b2f4;
+}
+
+.appointment-card .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+}
+
+.appointment-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.appointment-card .buttons div {
+    padding: .7rem 1.4rem;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.appointment-card .videocall {
+    background-color: rgb(174, 255, 53);
+}
+
+.appointment-card .videocall:hover {
+    background-color: rgb(141, 213, 32);
+    cursor: pointer;
+}
+
+.appointment-card .textmsg {
+    background-color: aqua;
+}
+
+.appointment-card .textmsg:hover {
+    background-color: rgb(5, 203, 203);
+}
+
+.appointment-card .cancel {
+    background-color: rgb(246, 56, 56);
+}
+
+.appointment-card .cancel:hover {
+    background-color: rgb(207, 47, 47);
+}

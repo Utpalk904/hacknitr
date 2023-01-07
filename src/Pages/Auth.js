@@ -1,5 +1,7 @@
+
 import React from "react"
 import "../Css/Auth.css"
+
 
 export default function Auth (props) {
   return (
