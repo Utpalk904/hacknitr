@@ -1,10 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../Css/userform.css';
 import InputBox from '../Components/Input_box';
 import axios from 'axios';
 
 
 export default function UserForm() {
+
+    const [firstName, setFirstName] = useState("")
+    const [LastName, setLastName] = useState("")
+    const [adate, setAdate] = useState("")
+    const [speciality, setSpeciality] = useState("")
+    const [phone, setPhone] = useState("")
+    const [gender, setGender] = useState("")
+
+
 
       useEffect(() => {
         const token = localStorage.getItem("token")
@@ -25,6 +34,33 @@ export default function UserForm() {
         verifyToken()
     }, [])
 
+
+    const appointmentSubmit = (e) => {
+        e.preventDefault();
+        const form_data = {
+          "name":firstName+" "+LastName,
+          "gender":gender,
+          "phone":phone,
+          "date":adate,
+          "speciality":speciality
+        }
+        const token = localStorage.getItem("token")
+        const config = {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        }
+        console.log(form_data);
+        axios.post(`http://localhost:5000/user/appointments`, form_data, config)
+            .then(res => {
+                console.log(res.data)
+                    window.location = "/"
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }
+
     return (
         <div className="form-container">
             <div className="form">
@@ -37,8 +73,8 @@ export default function UserForm() {
                     <div className="name">
                         <div className="title">Name</div>
                         <div className="input">
-                            <InputBox id="fname" name="First Name" />
-                            <InputBox id="lname" name="Last Name" />
+                            <InputBox id="fname" name="First Name" value={firstName} change={setFirstName} />
+                            <InputBox id="lname" name="Last Name" value={LastName} change={setLastName}/>
                         </div>
                     </div>
                     <div className="dob">
@@ -53,7 +89,7 @@ export default function UserForm() {
                         <div className="gender">
                             <div className="title">Gender</div>
                             <div className="input">
-                                <select name="gender" id="gender" className="gender_input">
+                                <select name="gender" id="gender" className="gender_input" value={gender} onChange={(e) => setGender(e.target.value)}>
                                     <option value="pls_select">Please Select</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
@@ -64,7 +100,7 @@ export default function UserForm() {
                         <div className="phone">
                             <div className="title">Phone Number</div>
                             <div className="input">
-                                <input type="text" className='phone_input' id="phone" placeholder='+91 XXXXXXXXXX' />
+                                <input type="text" className='phone_input' id="phone" placeholder='+91 XXXXXXXXXX'  value={phone} onChange={(e) => setPhone(e.target.value)} />
                             </div>
                         </div>
                     </div>
@@ -90,7 +126,7 @@ export default function UserForm() {
                     <div className="department">
                         <div className="title">Which department would you like to get an appointment from?</div>
                         <div className="input_field">
-                            <input type="text" name="dept" id="dept" />
+                            <input type="text" name="dept" id="dept" value={speciality} onChange={(e)=>setSpeciality(e.target.value)} />
                         </div>
                     </div>
                     <div className="procedure">
@@ -107,7 +143,7 @@ export default function UserForm() {
                     <div className="appointment">
                         <div className="title">Preferred Appointment Date</div>
                         <div className="input_fields">
-                            <input type="date" name="appointment_input" id="appointment_input" />
+                            <input type="date" name="appointment_input" id="appointment_input"  value={adate} onChange={(e) => setAdate(e.target.value)}/>
                         </div>
                     </div>
                     <div className="past_history">
@@ -124,7 +160,7 @@ export default function UserForm() {
                     </div>
                 </div>
                 <div className="submit-button">
-                    <button type="submit" className='submit-btn'>Submit</button>
+                    <button type="submit" className='submit-btn' onClick={(e)=> appointmentSubmit(e)}>Submit</button>
                 </div>
             </div >
         </div >
