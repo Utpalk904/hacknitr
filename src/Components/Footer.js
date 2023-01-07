@@ -9,34 +9,34 @@ export default function Footer() {
                 <div className="box1 footer_box">
                     <div className="title">WHO ARE WE</div>
                     <div className="content">
-                        <h3>About us</h3>
-                        <h3>Award & Achievements</h3>
-                        <h3>Board of Directors</h3>
-                        <h3>Clinics & Hospitals</h3>
-                        <h3>Our History</h3>
-                        <h3>News & Media</h3>
+                        <h4>About us</h4>
+                        <h4>Award & Achievements</h4>
+                        <h4>Board of Directors</h4>
+                        <h4>Clinics & Hospitals</h4>
+                        <h4>Our History</h4>
+                        <h4>News & Media</h4>
                     </div>
                 </div>
                 <div className="box1 footer_box">
                     <div className="title">MEDICAL SERVICES</div>
                     <div className="content">
-                        <h3>Cancer Care</h3>
-                        <h3>Health Care</h3>
-                        <h3>Orthopedic Care</h3>
-                        <h3>Women's Care</h3>
-                        <h3>Emergency Services</h3>
-                        <h3>Urgent Care</h3>
+                        <h4>Cancer Care</h4>
+                        <h4>Health Care</h4>
+                        <h4>Orthopedic Care</h4>
+                        <h4>Women's Care</h4>
+                        <h4>Emergency Services</h4>
+                        <h4>Urgent Care</h4>
                     </div>
                 </div>
                 <div className="box1 footer_box">
                     <div className="title">PATIENTS & VISITORS</div>
                     <div className="content">
-                        <h3>Advance Care Planning</h3>
-                        <h3>Billing & Insurance</h3>
-                        <h3>Medical Billing Request </h3>
-                        <h3>Pharmacy</h3>
-                        <h3>Patient Education</h3>
-                        <h3>Web Nursery</h3>
+                        <h4>Advance Care Planning</h4>
+                        <h4>Billing & Insurance</h4>
+                        <h4>Medical Billing Request </h4>
+                        <h4>Pharmacy</h4>
+                        <h4>Patient Education</h4>
+                        <h4>Web Nursery</h4>
                     </div>
                 </div>
                 <div className="box1 footer_box">
@@ -49,7 +49,7 @@ export default function Footer() {
                     <div className="title">SUBSCRIBE US</div>
                     <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, explicabo.</h4>
                     <div className="submit">
-                        <input type="text" className="email" id='email' placeholder='Email' />
+                        <input type="email" className="email" id='email' placeholder='Email' />
                         <button type="submit"><FaArrowRight /></button>
                     </div>
                 </div>

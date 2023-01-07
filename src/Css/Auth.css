@@ -4,7 +4,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url("../../public/background.webp");
+    /* background-image: url("../../public/background.webp"); */
     /* background-image: url("../../public/medrep1.jpg"); */
     background-size: cover;
     background-blend-mode: hue;

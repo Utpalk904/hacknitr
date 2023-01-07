@@ -4,7 +4,7 @@ import InputBox from '../Components/Input_box';
 
 export default function UserForm() {
     return (
-        <div className="container">
+        <div className="form-container">
             <div className="form">
                 <hr className="solid" />
                 <div className="request_container">

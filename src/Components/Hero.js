@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
 import styles from "../Css/Hero.module.css";
 import {FaAngleLeft, FaAngleRight, FaCircle} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Doc1 from '../Assets/doctor1.jpg';
+import Doc2 from '../Assets/doctor2.jpg';
+import Doc3 from '../Assets/doctor3.jpg';
+import Doc4 from '../Assets/doctor4.jpg';
+import Doc5 from '../Assets/doctor5.jpg';
+import Doc6 from '../Assets/doctor6.jpg';
 
 function Hero() {
-const images = ['doctor1.jpg','doctor2.jpg','doctor3.jpg','doctor4.jpg','doctor5.jpg','doctor6.jpg']
+const images = [Doc1,Doc2,Doc3,Doc4,Doc5,Doc6];
 
 const [index, setIndex] = useState(0)
 
@@ -30,8 +37,8 @@ useEffect(() => {
                 <h1>Dr. MedLocal</h1>
                 <h3>Welcomes you to this virtual clinic</h3>
                 <div style={{display:"flex", justifyContent:"space-between"}}>
-                    <a style={{backgroundColor:"#4e5fcb"}} href="#">Book Appointment</a>
-                    <a style={{backgroundColor:"#5ab7ed"}} href="#">Get Special Offers</a>
+                    <Link style={{backgroundColor:"#4e5fcb"}} to="/appointment">Book Appointment</Link>
+                    <Link style={{backgroundColor:"#5ab7ed"}} to="#">Get Special Offers</Link>
                 </div>
             </div>
         </div>

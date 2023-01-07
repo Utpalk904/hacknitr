@@ -5,6 +5,7 @@ import PageNotFound from './Pages/PageNotFound';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import UserForm from './Pages/user_form';
+import DoctorDashboard from './Pages/DoctorDashboard';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/appointment' element={<UserForm />} />
         <Route path='/login' element={<Home />} />
         <Route path='/register' element={<Home />} />
+        <Route path='/dashboard' element={<DoctorDashboard />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
       <Footer/>

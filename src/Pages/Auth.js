@@ -1,5 +1,5 @@
-import React from "react"
-import "./Auth.css"
+import React from "react";
+import "../Css/Auth.css";
 
 export default function Auth (props) {
   return (
