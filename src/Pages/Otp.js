@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../Css/otp.css';
 import axios from 'axios';
-export default function OTP() {
+
+export default function OTP(props) {
     const [otp, setOtp] = useState('');
     const otp_submit = (e) => {
         e.preventDefault();
@@ -9,16 +10,15 @@ export default function OTP() {
             'otp': otp
         }
         console.log(otp_data);
-        axios.post("http://localhost:5000/user/reset", otp_data)
+        axios.post(`http://localhost:5000/${props.type}/reset`, otp_data)
         .then(res => {
                 console.log(res.data)
                 localStorage.setItem("otp",otp)
-                window.location = "/user/changePassword"
+                window.location = `/${props.type}/changePassword`
         })
         .catch(err => {
                 console.log(err)
         })
-
     }
     return (
         <div className="container">

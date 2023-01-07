@@ -18,3 +18,11 @@ html {
     /* font-family: 'Libre Baskerville', serif; */
     /* font-family: 'Poppins', sans-serif; */
   }
+    :root {
+      --blue: #5ab7ed;
+      --purple: #4e5fcb;
+      --lighttext: #7e7e7e;
+      --darktext: #0A0A0A;
+      --red: #ed5b5bfa;
+      --white: #fff;
+    }

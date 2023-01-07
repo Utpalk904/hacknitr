@@ -3,6 +3,7 @@
     height: 65vh;
     display: flex;
     font-family: sans-serif;
+    margin-bottom:50px;
 }
 
 .container img {

@@ -23,7 +23,13 @@ const Navbar = () => {
 
     const [mobileMenu, setMobileMenu] = useState('mobile-menu-close');
 
+    const logOutHandler = () => {
+        localStorage.clear()
+        window.location="/"
+    }
+
     return (
+
         <header>
             <div className="topbar">
                 <div className="topbar-logo">
@@ -63,8 +69,8 @@ const Navbar = () => {
                         <ul>
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='/about'>About</Link></li>
-                            <li><Link to='/products'>Services</Link></li>
-                            <li><Link to='/about'>Our Professionals</Link></li>
+                            <li><Link to='/user/login'>User Login</Link></li>
+                            <li><Link to='/doctor/login'>Doctor Login</Link></li>
                             <li><Link to='/contact-us'>Contact Us</Link></li>
                         </ul>
                     </div>
@@ -73,9 +79,9 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="nav-right">
-                    <span className="account"><Link to='/login'><VscAccount /></Link></span>
+                    <span className="account" onClick={() => logOutHandler()}>Logout</span>
                 </div>
-            </nav >
+            </nav>
             <div className={mobileMenu}>
                 <div className="close-icon" onClick={() => { setMobileMenu('mobile-menu-close') }}><CgClose /></div>
                 <div className="column-menu">
