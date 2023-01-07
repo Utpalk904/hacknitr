@@ -50,3 +50,9 @@
 .doctor span{
     color:#5bb7ed;
 }
+
+@media (max-width:800px){
+    .doctors{
+        grid-template-columns: 1fr;
+    }
+}
