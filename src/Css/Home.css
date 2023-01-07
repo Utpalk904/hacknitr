@@ -49,6 +49,27 @@
     transition: all .15s;
 }
 
+.service-section {
+    margin: 3rem 0;
+}
+
+.service-section .all-services {
+    display: flex;
+    width: 100%;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-section h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    color: rgb(128, 128, 128);
+    margin-bottom: 2rem;
+}
+
 @media screen and (max-width:1350px) {
 
     .home-frame-content {

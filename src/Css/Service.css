@@ -1,0 +1,58 @@
+.service-card {
+    font-size: 1.3rem;
+    width: clamp(250px, 25vw, 650px);
+    border: 1px solid rgb(147, 141, 141);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .5s;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    height: 324px;
+}
+
+.service-card:hover hr {
+    width: 50px;
+    transition: all .5s;
+    border: 2px solid rgb(229, 112, 112);
+}
+
+.service-card:hover .service-icon {
+    transition: all .5s;
+    background-color: rgb(229, 112, 112);
+}
+
+.service-card hr {
+    width: 30px;
+    color: #5bb7ed;
+    border: 2px solid #5bb7ed;
+    transition: all .5s;
+    margin: .5rem 0;
+}
+
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    border-radius: 50%;
+    background-color: #5bb7ed;
+    padding: 1rem 0;
+    transition: all .5s;
+    width: 85px;
+    margin: .7rem 0;
+}
+
+.service-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+.service-desc {
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(109, 102, 102);
+}
