@@ -13,7 +13,7 @@ import { SlUserFemale } from 'react-icons/sl';
 import { BsEye } from 'react-icons/bs';
 import { TbDental } from 'react-icons/tb';
 import { GiHumanEar } from 'react-icons/gi';
-import Auth from './Auth';
+// import Auth from './Auth';
 
 
 const Home = () => {
