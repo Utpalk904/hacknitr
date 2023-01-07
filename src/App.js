@@ -7,7 +7,7 @@ import Footer from './Components/Footer';
 import ChangePassword from './Pages/ChangePassword';
 import OTP from './Pages/Otp';
 import Forgot_Pass from './Pages/Forgot';
-import Auth from './Pages/Auth';
+// import Auth from './Pages/Auth';
 import "bootstrap/dist/css/bootstrap.min.css"
 import About from './Pages/About';
 import UserForm from './Pages/user_form';

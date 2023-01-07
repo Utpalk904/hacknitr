@@ -14,6 +14,7 @@ import { BsEye } from 'react-icons/bs';
 import { TbDental } from 'react-icons/tb';
 import { GiHumanEar } from 'react-icons/gi';
 import Specials from '../Components/Specials';
+// import Auth from './Auth';
 
 
 const Home = () => {
