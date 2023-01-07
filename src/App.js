@@ -1,8 +1,11 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
 import PageNotFound from './Pages/PageNotFound';
 import Navbar from './Components/Navbar';
+import Forgot_Pass from './Pages/Forgot';
+import Home from './pages/Home';
+import OTP from './Pages/otp';
+import ChangePassword from './Pages/changePassword';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Route path='/contact-us' element={<Home />} />
         <Route path='/login' element={<Home />} />
         <Route path='/register' element={<Home />} />
+        <Route path="/user/forgotPassword" element={<Forgot_Pass/>}/>
+        <Route path="/user/verifyOtp" element={<OTP/>}/>
+        <Route path='/user/changePassword' element={<ChangePassword/>}></Route>
         <Route path='*' element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
