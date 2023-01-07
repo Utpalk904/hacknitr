@@ -11,15 +11,11 @@ import { GrInstagram } from "react-icons/gr";
 
 import { BiMenuAltLeft } from 'react-icons/bi';
 
-
-// import { IoIosSearch } from 'react-icons/io';
 import { FiPhoneCall } from 'react-icons/fi';
 
 import { VscAccount } from 'react-icons/vsc';
 
 import { CgClose } from 'react-icons/cg';
-
-// import { IoHomeOutline } from 'react-icons/io5';
 
 import { FiClock } from 'react-icons/fi';
 
