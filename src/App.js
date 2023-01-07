@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PageNotFound from './Pages/PageNotFound';
 import Navbar from './Components/Navbar';
 import Forgot_Pass from './Pages/Forgot';
-import Home from './pages/Home';
+import Home from './Pages/Home';
 import OTP from './Pages/otp';
 import ChangePassword from './Pages/changePassword';
 
