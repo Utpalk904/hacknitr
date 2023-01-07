@@ -1,0 +1,93 @@
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left{
+    padding:0 20px 0 20px;
+    width: 75%;
+}
+.right{
+    padding: 0 20px 0 15px;
+}
+.timings{
+    margin-top: 80px;
+    background-color: #a7eca7;
+    /* background-color: rgba(50, 80, 200, 0.6); */
+    color:white;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+.timings h4{
+    font-size: 18px;
+    margin:0 0 25px;
+}
+
+.hours span{
+    display: block;
+    font-size: 12px;
+    height: fit-content;
+    padding: 5px 0;
+    border-top: 1px solid #999;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    color: #555;
+}
+.about h1{
+    margin: 20px 0 10px 0;
+    padding: 0 0 10px 0;
+}
+.about p{
+    font-size: 14px;
+}
+.services{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.listsec{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 500px;
+    padding-bottom: 10px;
+}
+.listsec p{
+    font-size: 20px;
+    width: 80%;
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
+}
+
+.list{
+    display: flex;
+    color:#66cc99;
+    justify-content: space-around;
+}
+.list div{
+    width:40%;
+    padding: 0 0 40px 0;
+}
+.list span{
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+}
+.image{
+    width: 300px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Assets/services.jpg");
+}
+.list span svg{
+    padding-right: 10px;
+}

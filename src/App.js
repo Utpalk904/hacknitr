@@ -9,6 +9,7 @@ import OTP from './Pages/Otp';
 import Forgot_Pass from './Pages/Forgot';
 import Auth from './Pages/Auth';
 import "bootstrap/dist/css/bootstrap.min.css"
+import About from './Pages/About';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/about' element={<Home />} />
+        <Route path='/about' element={<About/>} />
         <Route path='/contact-us' element={<Home />} />
         <Route path='/login' element={<Auth/>} />
         <Route path='/register' element={<Home />} />
