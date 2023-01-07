@@ -1,4 +1,4 @@
-import styles from "./Specials.module.css"
+import styles from "../Css/Specials.module.css"
 
 function Specials() {
     return ( 

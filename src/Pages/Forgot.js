@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Css/forgot_pass.css';
 import axios from 'axios';
 
-export default function Forgot_Pass() {
+export default function Forgot_Pass(props) {
     const [mail, setMail] = useState('');
     const forgot_submit = (e) => {
         e.preventDefault();
@@ -11,10 +11,10 @@ export default function Forgot_Pass() {
             "email": mail
         }
         console.log(forgot_data);
-        axios.post("http://localhost:5000/user/forgotPassword", forgot_data)
+        axios.post(`http://localhost:5000/${props.type}/forgotPassword`, forgot_data)
             .then(res => {
                 console.log(res.data)
-                window.location = "/user/verifyOtp"
+                window.location = `/${props.type}/verifyOtp`
             })
             .catch(err => {
                 console.log(err)
