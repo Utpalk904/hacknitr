@@ -13,11 +13,10 @@ const Home = () => {
         <div>
             <div className="home-frame">
                 <div className="home-frame-content" data-aos="zoom-in-right">
-                    <div className="line1">Spring - Summer 2023</div>
-                    <div className="line2">FLASH SALE OF 70%</div>
-                    <div className="line3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, accusantium dolorem. Quam ea corporis accusamus magnam ab rem nemo omnis.</div>
+                    <div className="line1">Lorem ipsum dolor sit amet.</div>
+                    <div className="line2">Exclusive Medical Care</div>
                     <div className="line4">
-                        <Link to='/products' className='shop-now'>Shop now</Link>
+                        <Link to='/products' className='shop-now'>Book Appointment</Link>
                     </div>
                 </div>
             </div>
