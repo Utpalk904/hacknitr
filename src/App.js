@@ -3,10 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import PageNotFound from './Pages/PageNotFound';
 import Navbar from './Components/Navbar';
-import Forgot_Pass from './Pages/Forgot';
-import Home from './Pages/Home';
-import OTP from './Pages/otp';
-import ChangePassword from './Pages/changePassword';
 import Footer from './Components/Footer';
 
 function App() {
