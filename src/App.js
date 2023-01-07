@@ -12,6 +12,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import About from './Pages/About';
 import UserForm from './Pages/user_form';
 import DoctorDashboard from './Pages/DoctorDashboard';
+import Login from './Pages/login';
+import Register from './Pages/register';
 
 function App() {
   return (
@@ -22,8 +24,8 @@ function App() {
         <Route path='/about' element={<About/>} />
         <Route path='/contact-us' element={<Home />} />
         <Route path='/appointment' element={<UserForm />} />
-        <Route path='/login' element={<Home />} />
-        <Route path='/register' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
         <Route path='' element={<Forgot_Pass/>}></Route>
         <Route path='/user/verifyOtp' element={<OTP/>} ></Route>
         <Route path='/user/changePassword' element={<ChangePassword/>}></Route>

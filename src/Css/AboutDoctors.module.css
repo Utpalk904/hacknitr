@@ -1,6 +1,8 @@
 .container{
     width: 100%;
-    margin:20px 0 40px 0;
+    /* margin:20px 0 40px 0; */
+    font-family: 'poppins', 'sans-serif';
+    margin: 2rem 0;
 }
 .container h1{
     font-size: 24px;
@@ -8,15 +10,14 @@
     color: #444;
 }
 .doctors{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .doctor{
-    padding: 0 15px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem;
+    width: clamp(400px,35vw,700px);
 }
 .doctor img{
     margin-top: 20px;
@@ -52,7 +53,7 @@
 }
 
 @media (max-width:800px){
-    .doctors{
-        grid-template-columns: 1fr;
+    .doctor{
+        width: clamp(400px,60vw,700px);
     }
 }

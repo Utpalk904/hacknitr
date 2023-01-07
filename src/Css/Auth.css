@@ -47,18 +47,18 @@
     font-weight: 800;
 }
 
-label {
+.Auth-form label {
     font-size: 22px;
     font-weight: 600;
     color: rgb(90, 90, 90);
 }
 
-input {
+.Auth-form input {
     background-color: transparent;
     font-size: 28px;
 }
 
-p {
+.Auth-form p {
     font-size: 20px;
     color: rgb(64, 64, 64)
 }

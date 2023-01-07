@@ -63,6 +63,11 @@ nav {
     font-family: 'Poppins', sans-serif;
 }
 
+nav ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
 .menu-icon {
     display: none;
     justify-content: center;

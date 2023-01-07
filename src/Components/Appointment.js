@@ -6,6 +6,9 @@ import '../Css/Appointment.css';
 function Appointment(props) {
   return (
     <div className='appointment-card'>
+        <div className="patient-id">
+            <span>Patient Id:</span> {props.id}
+        </div>
         <div className="patient-name">
             <span>Name:</span> {props.name}
         </div>

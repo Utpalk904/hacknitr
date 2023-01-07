@@ -7,7 +7,7 @@ function AboutHeader() {
         <div className={styles.image}>
             <div className={styles.flexsb}>
                 <h1>About</h1>
-                <NavLink className={styles.bookbtn}>Book Your Appointment</NavLink>
+                {/* <NavLink className={styles.bookbtn}>Book Your Appointment</NavLink> */}
             </div>
         </div>
         </>
