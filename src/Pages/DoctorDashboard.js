@@ -5,6 +5,8 @@ import axios from 'axios';
 
 function DoctorDashboard() {
 const [username, setUsername] = useState("")
+const [verified,setVerified] = useState(false)
+const [loading, setLoading] = useState(true)
 
       useEffect(() => {
         const token = localStorage.getItem("token")
@@ -18,14 +20,35 @@ const [username, setUsername] = useState("")
                 const resp = await axios.get("http://localhost:5000/doctor/check_login", config)
                 if (resp.data.verified){
                   console.log("verified")
+                  setVerified(true)
                   setUsername(localStorage.getItem("username"))
                 }
             } catch (error) {
+                setVerified(false)
                 window.location = "/doctor/login"
             }
         }
         verifyToken()
     }, [])
+
+  const [data, setData] = useState([])
+
+    useEffect(() => { 
+      const getData = async ()=>{
+            try {
+            const resp = await axios.get(`http://localhost:5000/doctors/appointments`) 
+            setData(resp.data.appointments);
+            setLoading(false)
+            console.log(resp.data.appointments)
+        } catch (error) {
+          setLoading(true)
+            console.log("[Get Doctors]",error)
+        }
+      }
+      if(verified)
+        getData()
+        
+    },  [verified])
 
   return (
     <div className='dashboard'>
@@ -33,10 +56,13 @@ const [username, setUsername] = useState("")
         <h1>Your Appointments</h1>
         <hr />
         <div className="appointment-list">
-            <Appointment name='Utpal Kumar' gender='Male' contact='8700255519' purpose='Check-up' date='9 Jan, 2023'/>
-            <Appointment name='Utpal Kumar' gender='Male' contact='8700255519' purpose='Check-up' date='9 Jan, 2023'/>
-            <Appointment name='Utpal Kumar' gender='Male' contact='8700255519' purpose='Check-up' date='9 Jan, 2023'/>
-            <Appointment name='Utpal Kumar' gender='Male' contact='8700255519' purpose='Check-up' date='9 Jan, 2023'/>
+            {
+                !loading && 
+                data.map((appointment) => {
+                    return  <Appointment name={appointment.name} gender={appointment.gender} contact={appointment.phone} department={appointment.speciality} date={appointment.date}/>
+                })
+                
+            }
         </div>
     </div>
   )

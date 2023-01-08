@@ -13,8 +13,6 @@ import { BiMenuAltLeft } from 'react-icons/bi';
 
 import { FiPhoneCall } from 'react-icons/fi';
 
-import { VscAccount } from 'react-icons/vsc';
-
 import { CgClose } from 'react-icons/cg';
 
 import { FiClock } from 'react-icons/fi';
