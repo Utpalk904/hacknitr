@@ -25,8 +25,10 @@ function App() {
         <Route path='/about' element={<About/>} />
         <Route path='/contact-us' element={<Home />} />
         <Route path='/appointment' element={<UserForm />} />
-        <Route path='/user/login' element={<Auth type="user"/>} />
-        <Route path='/doctor/login' element={<Auth type="doctor"/>} />
+        <Route path="/user/register" element={<UserRegister/>}/>
+        <Route path="/doctor/register" element={<DoctorRegister/>}/>
+        <Route path='/user/login' element={<Login type="user"/>} />
+        <Route path='/doctor/login' element={<Login type="doctor"/>} />
         <Route path='/register' element={<Home />} />
         <Route path='/user/forgotPassword' element={<Forgot_Pass/>}></Route>
         <Route path='/user/verifyOtp' element={<OTP/>} ></Route>
