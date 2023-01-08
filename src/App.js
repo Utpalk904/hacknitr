@@ -7,14 +7,14 @@ import Footer from './Components/Footer';
 import ChangePassword from './Pages/ChangePassword';
 import OTP from './Pages/Otp';
 import Forgot_Pass from './Pages/Forgot';
-// import Auth from './Pages/Auth';
+import Auth from './Pages/Auth';
 import "bootstrap/dist/css/bootstrap.min.css"
 import About from './Pages/About';
 import UserForm from './Pages/user_form';
 import DoctorDashboard from './Pages/DoctorDashboard';
 import Login from './Pages/login';
-import UserRegister from './Pages/userRegister';
-import DoctorRegister from './Pages/doctorRegister';
+import Register from './Pages/register';
+import Doctors from './Pages/Doctors';
 
 function App() {
   return (
@@ -37,6 +37,7 @@ function App() {
         <Route path='/doctor/verifyOtp' element={<OTP type="doctor"/>} ></Route>
         <Route path='/doctor/changePassword' element={<ChangePassword type="doctor"/>}></Route>
         <Route path='/dashboard' element={<DoctorDashboard />} />
+        <Route path='/doctor-list' element={<Doctors />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
       <Footer/>
